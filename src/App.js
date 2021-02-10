@@ -24,7 +24,6 @@ const fetcher = async (...args) => {
 
 
 const App = () => {
-    console.log(process.env)
     const [userName, setUsername] = useState('');
     const { data, error, isValidating } = useSWR(userName ? `/search/users?q=${userName}&per_page=10` : null, fetcher);
 
