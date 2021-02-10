@@ -5,7 +5,6 @@ import useSWR from 'swr';
 // Implement Debounce (e.g. lodash etc...)
 
 const fetcher = async (...args) => {
-    console.log(`token ${process.env.REACT_APP_GITHUB_SECRET}`)
     const res = await fetch(`https://api.github.com${args}`, {
         headers: {
             authorization: `${process.env.REACT_APP_GITHUB_SECRET}`,
