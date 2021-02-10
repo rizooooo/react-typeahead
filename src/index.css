@@ -1,13 +1,65 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+html, body, #root {
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  background-color: #2b3e50;
+  color: #fff;
+}
+
+.form-control {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+
+.main-container {
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.listgroup-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+}
+
+.list-group {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  color: black;
+  margin-top: 5px;
+}
+
+.list-item {
+  margin-bottom: 5px;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.list-item:hover {
+  cursor: pointer;
+  background-color: #4e5d6c;
+  color: #fff;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
 }
