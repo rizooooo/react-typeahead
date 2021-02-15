@@ -1,0 +1,1 @@
+export { default as LandingModule } from './landing/landing.component';
